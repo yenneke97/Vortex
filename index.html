@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vortex - Лаунчер приложений</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Внешний CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Canvas для анимированного фона -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Эффекты свечения -->
+    <div class="glow-effect glow-1"></div>
+    <div class="glow-effect glow-2"></div>
+    <div class="glow-effect glow-3"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://i.postimg.cc/3x06zJp9/image.png" alt="Vortex Logo" class="logo-image">
+                    <div class="logo-text">Vortex</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="version-badge">Версия 0.5</span>
+                <h1>Ваш игровой мир - под контролем</h1>
+                <p>Vortex - современный лаунчер для управления вашими приложениями и играми. Добавляйте приложения, настраивайте иконки и фон, отслеживайте игровое время - всё в одном месте.</p>
+                <a href="https://drive.google.com/file/d/1dEAqSCv8Hl656hrw615preudRs6-MSGZ/view?usp=drive_link" class="cta-button" target="_blank">
+                    <i class="fas fa-download"></i> Скачать бесплатно
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Мощные возможности</h2>
+                <p>Откройте для себя всё, что может предложить Vortex</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Быстрый запуск</h3>
+                    <p>Запускайте ваши любимые приложения и игры в один клик. Больше не нужно искать их в меню или на рабочем столе.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Отслеживание времени</h3>
+                    <p>Знайте точно, сколько времени вы провели в каждой игре. Анализируйте свою игровую активность с точной статистикой.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Полная кастомизация</h3>
+                    <p>Настройте внешний вид лаунчера под себя. Выбирайте темы, меняйте иконки и фоны для создания идеального интерфейса.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Управление коллекцией</h3>
+                    <p>Добавляйте любые приложения и игры в вашу коллекцию. Сортируйте их по категориям для удобного доступа.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Уведомления</h3>
+                    <p>Получайте уведомления о новых обновлениях игр и важных событиях прямо в лаунчере.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Минимальные ресурсы</h3>
+                    <p>Vortex работает быстро и не замедляет ваш компьютер, потребляя минимум системных ресурсов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Внешний вид</h2>
+                <p>Познакомьтесь с интерфейсом Vortex</p>
+            </div>
+
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://i.postimg.cc/8cq0yR7D/image.png" alt="Vortex Interface" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                &copy; 2025 Vortex Launcher. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for fullscreen image -->
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <!-- Внешний JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
